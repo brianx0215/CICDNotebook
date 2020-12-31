@@ -23,7 +23,6 @@ workflows:
     jobs:
       - test
       - slack/on-hold:
-          context: slack-secrets
           filters:
             tags:
               only: /^v.*/
