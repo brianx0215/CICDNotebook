@@ -7,6 +7,7 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     steps:
+      - aws-cli/install
       - run:
           name: Destroy environments
           command: |
